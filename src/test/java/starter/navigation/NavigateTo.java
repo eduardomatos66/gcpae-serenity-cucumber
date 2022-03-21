@@ -9,4 +9,9 @@ public class NavigateTo {
         return Task.where("{0} opens the Wikipedia home page",
                 Open.browserOn().the(WikipediaHomePage.class));
     }
+
+    public static Performable theGcpaeHomePage() {
+        return Task.where("{0} opens the GCPAE home page",
+                Open.browserOn().the(GcpaeHomePage.class));
+    }
 }
